@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BATTREX SOLUTIONS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #009E60;  /* Changed from blue to green */
+            --secondary-color: #007E4A;  /* Darker shade of green */
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* Section styling */
+        .vision-mission-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .vision-mission-section .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+        }
+
+        .vision-mission-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Team section */
+        .team-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        .team-section .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .team-section .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--accent-color);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* Team member cards */
+        .team-member {
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .team-member h4 {
+            margin-top: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .team-member p {
+            color: #777;
+        }
+
+        .team-member .social-icons a {
+            color: var(--primary-color);
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+
+        .team-member .social-icons a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Button hover effects */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 100px 0;
+            color: white;
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .catalog-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .catalog-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .animated-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+        }
+        
+        .custom-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 50px;
+        }
+        
+        .testimonial-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        /* Modify Bootstrap primary color for green */
+        .btn-primary {
+            background-color: var(--primary-color) !important;
+            border-color: var(--primary-color) !important;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo Primary.png" alt="Logo" width="60" height="50">
+                <i class=""></i> BATTREX SOLUTIONS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission-section text-center">
+        <div class="container">
+            <h2 class="section-title">Our Vision</h2>
+            <p class="lead">To revolutionize the battery industry by driving innovation, quality, and sustainability in energy storage solutions.</p>
+
+            <h2 class="section-title mt-5">Our Mission</h2>
+            <p class="lead">To provide expert consultancy and cutting-edge solutions that empower businesses with high-performing, reliable, and efficient battery technologies.</p>
+
+            <h2 class="section-title mt-5">What We Are Aimed To</h2>
+            <p class="lead">Our aim is to become the go-to consultancy for comprehensive battery performance analysis and optimization, ensuring long-term reliability and efficiency across industries.</p>
+        </div>
+    </section>
+
+    <!-- Company Members Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="text-center section-title">Meet Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQGbFamM72uifg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517368995818?e=2147483647&v=beta&t=d9rzK_g-bqntBK1gG-QMtlHV2Ag1c9kMm6q8HlB63eo" alt="Narendra Kolluru">
+                        <h4>Narendra Kolluru</h4>
+                        <p>CEO & Founder</p>
+                        <p class="text-muted">Narendra has over 20 years of experience in battery technology and is the visionary behind BATTREX Solutions.</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/narendra-kolluru-36468444"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="team-member">
+                        <img src="https://media.licdn.com/dms/image/D4E03AQHZ7179ITHNHg/profile-displayphoto-shrink_400_400/0/1715780791155?e=2147483647&v=beta&t=A-EJt5Zpby-HgEb_rqetmv2UREe1kOSpIUOk_RepOGI" alt="Hayagreeva Kolluru">
+                        <h4>Hayagreeva Kolluru</h4>
+                        <p>ML Engineer</p>
+                        <p class="text-muted">Hayagreeva heads the technical analysis team and is known for his innovative approach to battery optimization.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="team-member">
+                        <img src="Nithesh.jpg" alt="Nithesh">
+                        <h4>G. Chandu Nithesh</h4>
+                        <p>Software Developer</p>
+                        <p class="text-muted">Nithesh is an expert in developing responsive web designs and has led groundbreaking advancements in our web platform.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 BATTREX SOLUTIONS. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-2">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

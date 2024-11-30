@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audits - BATTREX SOLUTIONS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #009E60;  /* Changed from blue to green */
+            --secondary-color: #007E4A;  /* Darker shade of green */
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* Header Section Styling */
+        .audits-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .audits-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .audits-header p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Audit Service Cards */
+        .audit-services {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        .audit-services .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .audit-services .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--accent-color);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* Audit Cards */
+        .audit-card {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+        }
+
+        .audit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .audit-card img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .audit-card h4 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .audit-card p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        /* Button hover effects */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .btn-primary:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (reuse from previous pages) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo Primary.png" alt="Logo" width="60" height="50">
+                <i class=""></i> BATTREX SOLUTIONS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="expertise.html">Expertise</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="audits-header">
+        <div class="container">
+            <h1>Battery Audits & Assessments</h1>
+            <p>Ensuring top-notch performance, safety, and reliability through our comprehensive audit services.</p>
+            <p>At Battrex Solutions, our thorough audit processes are designed to help battery manufacturers deliver safe, high-quality, and sustainable products while optimizing operational performance.</p>
+        </div>
+    </section>
+
+    <!-- Audit Services Section -->
+    <section class="audit-services">
+        <div class="container">
+            <h2 class="section-title">Our Audit Services</h2>
+            <div class="row">
+                <!-- Audit Service 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Performance Audits.png" alt="Audit Icon">
+                        <h4>Performance Audits</h4>
+                        <p>We evaluate your battery systems to ensure they meet the highest performance standards.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Product Design Audits.png" alt="Audit Icon">
+                        <h4>Product Design Audits</h4>
+                        <p>Safety is paramount. Our safety audits guarantee that your battery systems comply with all safety regulations.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+                
+                <!-- Audit Service 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Product Safty Audits.png" alt="Audit Icon">
+                        <h4>Product Safety Audits</h4>
+                        <p>Safety is paramount. Our safety audits guarantee that your battery systems comply with all safety regulations.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Efficiency Audits.jpg" alt="Audit Icon">
+                        <h4>Efficiency Audits</h4>
+                        <p>Optimize your battery usage and reduce waste with our efficiency audits, aimed at boosting long-term performance.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Process Audits.jpg" alt="Audit Icon">
+                        <h4>Process Audits</h4>
+                        <p>Our team evaluates manufacturing processes, identifying opportunities for optimization, increased efficiency, and adherence to best practices.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Quality Audits.jpg" alt="Audit Icon">
+                        <h4>Quality Audits</h4>
+                        <p>We ensure that our clients' products consistently meet customer expectations and comply with industry standards through comprehensive quality audits.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Energy Efficiency Audits.jpg" alt="Audit Icon">
+                        <h4>Energy Efficiency Audits</h4>
+                        <p>We promote energy efficiency by auditing both the production process and the batteries themselves to ensure optimal energy output.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Manufactouring Efficiency Audits.png" alt="Audit Icon">
+                        <h4>Manufacturing Process Audits</h4>
+                        <p>We focus on enhancing manufacturing efficiency and accuracy to support lean and effective production processes.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+
+                <!-- Audit Service 9 -->
+                <div class="col-md-4 mb-4">
+                    <div class="audit-card">
+                        <img src="Regulatory And Compailance Audits.png" alt="Audit Icon">
+                        <h4>Regulatory Compliance Audits</h4>
+                        <p>Optimize your battery usage and reduce waste with our efficiency audits, aimed at boosting long-term performance.</p>
+                        <!--<a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (reuse from other pages) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 BATTREX SOLUTIONS. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-2">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATTREX SOLUTIONS - Expertise</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #009E60;  /* Changed from blue to green */
+            --secondary-color: #007E4A;  /* Darker shade of green */
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 100px 0;
+            color: white;
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .catalog-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .catalog-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .animated-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+        }
+        
+        .custom-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 50px;
+        }
+        
+        .testimonial-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        /* Modify Bootstrap primary color for green */
+        .btn-primary {
+            background-color: var(--primary-color) !important;
+            border-color: var(--primary-color) !important;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo Primary.png" alt="Logo" width="60" height="60">
+                <i class=""></i> BATTREX SOLUTIONS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="audits.html">Audits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <!--<ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section position-relative">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Our Expertise</h1>
+            <p class="lead mb-4">Specialized knowledge and skills in battery technology and consultancy services.</p>
+            <a href="#contact" class="btn btn-light btn-lg px-5 py-3 rounded-pill">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Areas of Expertise</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card expertise-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Battery Chemistry</h3>
+                            <p class="card-text">In-depth understanding of various battery chemistries including lithium-ion, lead-acid, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card expertise-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">System Integration</h3>
+                            <p class="card-text">Expertise in integrating battery systems into larger energy solutions for efficiency and performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card expertise-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Safety Protocols</h3>
+                            <p class="card-text">Implementation of rigorous safety standards and protocols for battery handling and usage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Product Catalog</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <img src="Battrey Testing Equipment.png" width="50">
+                            <!--<i class="fas fa-microscope fa-3x text-primary mb-3"></i>-->
+                            <h3 class="card-title">Battery Testing Equipment</h3>
+                            <p class="card-text">Professional-grade testing equipment for comprehensive battery analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <img src="Quality Control Systems.jpg" width="70">
+                            <!--<i class="fas fa-check-circle fa-3x text-primary mb-3"></i>-->
+                            <h3 class="card-title">Quality Control Systems</h3>
+                            <p class="card-text">Automated systems for efficient and accurate battery quality control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Performance Monitoring Tools</h3>
+                            <p class="card-text">Advanced tools for real-time battery performance monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Client Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-3">"BATTREX Solutions revolutionized our battery testing processes. Their expertise is unmatched."</p>
+                        <strong>John Doe</strong>
+                        <p class="text-muted">CEO, EnergyTech Inc</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-3">"BATTREX Solutions revolutionized our battery testing processes. Their expertise is unmatched."</p>
+                        <strong>John Doe</strong>
+                        <p class="text-muted">CEO, EnergyTech Inc</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p class="mb-3">"BATTREX Solutions revolutionized our battery testing processes. Their expertise is unmatched."</p>
+                        <strong>John Doe</strong>
+                        <p class="text-muted">CEO, EnergyTech Inc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <!-- Footer Section (reuse from other pages) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 BATTREX SOLUTIONS. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-2">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
